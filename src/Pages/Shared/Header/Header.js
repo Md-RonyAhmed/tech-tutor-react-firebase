@@ -26,8 +26,24 @@ const Header = () => {
           </li>
           <li>
             <Link
+              to="/courses"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
+            >
+              Courses
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/services"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/about"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
             >
               About
             </Link>
@@ -35,7 +51,7 @@ const Header = () => {
           <li>
             <Link
               to="/blogs"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
             >
               Blogs
             </Link>
@@ -43,7 +59,7 @@ const Header = () => {
           <li>
             <Link
               to="/login"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
             >
               LogIn
             </Link>
@@ -96,22 +112,54 @@ const Header = () => {
                   </div>
                 </div>
                 <nav>
-                  <ul className="space-y-4">
+                  <ul className="space-y-4 text-center">
                     <li>
-                      <a
-                        href="/"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      <Link
+                        to="/"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
                       >
-                        Products
-                      </a>
+                        Home
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      <Link
+                        to="/courses"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
                       >
-                        Dashboard
-                      </a>
+                        Courses
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/services"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                      >
+                        Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/about"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/blogs"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                      >
+                        Blogs
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/login"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                      >
+                        LogIn
+                      </Link>
                     </li>
                   </ul>
                 </nav>
