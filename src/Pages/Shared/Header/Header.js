@@ -5,7 +5,7 @@ import logo from '../../../Assets/Images/logo.png';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-slate-200">
+    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-black text-white">
       <div className="relative flex items-center justify-between">
         <div className="flex items-center">
           <img className="mr-0" height="55px" width="55px" src={logo} alt="" />
@@ -19,7 +19,7 @@ const Header = () => {
           <li>
             <Link
               to="/"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
             >
               Home
             </Link>
@@ -27,7 +27,7 @@ const Header = () => {
           <li>
             <Link
               to="/courses"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
             >
               Courses
             </Link>
@@ -35,7 +35,7 @@ const Header = () => {
           <li>
             <Link
               to="/services"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
             >
               Services
             </Link>
@@ -43,7 +43,7 @@ const Header = () => {
           <li>
             <Link
               to="/about"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
             >
               About
             </Link>
@@ -51,7 +51,7 @@ const Header = () => {
           <li>
             <Link
               to="/blogs"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
             >
               Blogs
             </Link>
@@ -59,7 +59,7 @@ const Header = () => {
           <li>
             <Link
               to="/login"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
             >
               LogIn
             </Link>
@@ -86,8 +86,8 @@ const Header = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-0 left-0 w-full">
-              <div className="p-5 bg-white border rounded shadow-sm">
+            <div className="absolute top-0 left-0 w-full z-10">
+              <div className="p-5 bg-black border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <a href="/" className="inline-flex items-center">
@@ -116,7 +116,7 @@ const Header = () => {
                     <li>
                       <Link
                         to="/"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
                       >
                         Home
                       </Link>
@@ -124,7 +124,7 @@ const Header = () => {
                     <li>
                       <Link
                         to="/courses"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
                       >
                         Courses
                       </Link>
@@ -132,7 +132,7 @@ const Header = () => {
                     <li>
                       <Link
                         to="/services"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
                       >
                         Services
                       </Link>
@@ -140,7 +140,7 @@ const Header = () => {
                     <li>
                       <Link
                         to="/about"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
                       >
                         About
                       </Link>
@@ -148,7 +148,7 @@ const Header = () => {
                     <li>
                       <Link
                         to="/blogs"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
                       >
                         Blogs
                       </Link>
@@ -156,7 +156,7 @@ const Header = () => {
                     <li>
                       <Link
                         to="/login"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
+                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:bg-slate-200 p-4 block"
                       >
                         LogIn
                       </Link>
