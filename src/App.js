@@ -1,4 +1,7 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './Pages/About/About';
+import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -8,8 +11,13 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <Home></Home>
-      <NotFound></NotFound>
+      <Routes>
+        <Route path='/' element={<Home></Home>}/>
+        <Route path='/about' element={<About></About>}/>
+        <Route path='/blogs' element={<Blogs></Blogs>}/>
+        <Route path='/' element={<Home></Home>}/>
+        <Route path='*' element={<NotFound></NotFound>}/>
+      </Routes>
       <Footer></Footer>
     </div>
   );

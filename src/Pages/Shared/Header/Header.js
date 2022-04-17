@@ -19,7 +19,7 @@ const Header = () => {
           <li>
             <Link
               to="/"
-              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:border-b-2 hover:border-orange-500 hover:pb-1"
             >
               Home
             </Link>
@@ -27,7 +27,7 @@ const Header = () => {
           <li>
             <Link
               to="/courses"
-              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:border-b-2 hover:border-orange-500 hover:pb-1"
             >
               Courses
             </Link>
@@ -35,7 +35,7 @@ const Header = () => {
           <li>
             <Link
               to="/services"
-              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:border-b-2 hover:border-orange-500 hover:pb-1"
             >
               Services
             </Link>
@@ -43,7 +43,7 @@ const Header = () => {
           <li>
             <Link
               to="/about"
-              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:border-b-2 hover:border-orange-500 hover:pb-1"
             >
               About
             </Link>
@@ -51,7 +51,7 @@ const Header = () => {
           <li>
             <Link
               to="/blogs"
-              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:border-b-2 hover:border-orange-500 hover:pb-1"
             >
               Blogs
             </Link>
@@ -59,7 +59,7 @@ const Header = () => {
           <li>
             <Link
               to="/login"
-              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600"
+              className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:border-b-2 hover:border-orange-500 hover:pb-1"
             >
               LogIn
             </Link>
