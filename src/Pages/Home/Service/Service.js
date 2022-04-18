@@ -14,7 +14,7 @@ const Service = ({ service }) => {
          <h5 className="text-gray-900 text-xl font-medium mb-2">
            Name: {title}
          </h5>
-         <p className="text-gray-700 text-base mb-4">Price: {price}</p>
+         <p className="text-gray-700 text-base mb-4">Price: ${price}</p>
          <p className="text-gray-700 text-base mb-4">Courses: {courses}</p>
          <p className="text-gray-700 text-sm mb-4">{description}</p>
          <button

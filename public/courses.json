@@ -1,10 +1,10 @@
 [
   {
     "id": "1",
-    "title": "Study with Group",
-    "img": "https://i.ibb.co/N16tRbM/pexels-photo-3182773.jpg",
+    "title": "Artificial Intelligence",
+    "img": "https://i.ibb.co/2KCdLPb/artificial-face-recognition-abstract-technology-52683-12749.webp",
     "price": "200",
-    "courses": "3",
+    "rating": "⭐⭐⭐⭐",
     "description": "This is a basic service that I provide, where students can study with a talented group. There are three basic courses in this service."
   },
   {
