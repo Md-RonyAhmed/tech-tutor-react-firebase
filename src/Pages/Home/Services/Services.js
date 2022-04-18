@@ -13,7 +13,7 @@ const Services = () => {
        return (
          <div id="services" className="container">
            <div>
-             <h1 className="text-blue-600 text-center my-8 text-3xl">
+             <h1 className="text-blue-600 text-center my-8 mb-0 text-3xl">
                {" "}
                Our Services
              </h1>
