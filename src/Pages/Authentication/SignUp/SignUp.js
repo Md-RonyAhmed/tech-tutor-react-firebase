@@ -4,6 +4,7 @@ import {
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer,toast } from "react-toastify";
 import auth from "../../../firebase.init";
 import Loading from "../../Shared/Loading/Loading";
 
@@ -12,19 +13,12 @@ const SignUp = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
-
+  
   const navigate = useNavigate();
-
-  // const navigateLogin = () => {
-  //   navigate("/login");
-  // };
+ 
 
   if (loading || updating) {
     return <Loading></Loading>;
-  }
-
-  if (user) {
-    console.log("user", user);
   }
 
   const handleRegister = async (event) => {
@@ -32,7 +26,10 @@ const SignUp = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
-
+    const cpassword = event.target.cpassword.value;
+    if (password !== cpassword) {
+      return toast("password doesn't match");
+    }
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
     console.log("Updated profile");
@@ -169,7 +166,6 @@ const SignUp = () => {
               <input
                 onClick={() => setAgree(!agree)}
                 type="checkbox"
-                required
                 className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                 id="exampleCheck2"
               />
@@ -215,6 +211,7 @@ const SignUp = () => {
             </Link>
           </p>
         </form>
+        <ToastContainer/>
       </div>
     </div>
   );
