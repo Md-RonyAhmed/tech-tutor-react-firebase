@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Study with Group",
+    "img": "https://i.ibb.co/N16tRbM/pexels-photo-3182773.jpg",
+    "price": "200",
+    "courses": "3",
+    "description": "This is a basic service that I provide, where students can study with a talented group. There are three basic courses in this service."
+  },
+  {
+    "id": "2",
+    "title": "Study Online",
+    "img": "https://i.ibb.co/QNRzdrH/photo-1554415707-6e8cfc93fe23-ixlib-rb-1-2.jpg",
+    "price": "300",
+    "courses": "5",
+    "description": "This is a online service that I provide, where students can study from home in online platform. There are five intermediate courses in this service."
+  },
+  {
+    "id": "3",
+    "title": "Private Special Care",
+    "img": "https://i.ibb.co/qFX3tTj/photo-1454165804606-c3d57bc86b40-ixlib-rb-1-2.jpg",
+    "price": "600",
+    "courses": "8",
+    "description": "This is a premium service that I provide, where student can study with a special care in private. There are eight advanced courses in this service."
+  }
+]
