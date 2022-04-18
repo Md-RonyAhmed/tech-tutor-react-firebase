@@ -18,20 +18,6 @@ const Service = ({ service }) => {
          </button>
        </div>
      </div>
-     //   <div className="container">
-     //     <img className="w-full" src={img} alt="" />
-     //     <h2>{title}</h2>
-     //       <p>Price: {price}</p>
-     //       <p>Courses: {courses}</p>
-     //     <p>
-     //       <small>{description}</small>
-     //     </p>
-     //     <button
-     //       className="btn btn-primary"
-     //     >
-     //       Book: {title}
-     //     </button>
-     //   </div>
    );
 };
 

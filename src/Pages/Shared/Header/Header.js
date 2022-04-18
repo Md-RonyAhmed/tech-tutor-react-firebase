@@ -33,12 +33,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="/services"
+            <a
+              href="#services"
               className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-600 hover:border-b-2 hover:border-orange-500 hover:pb-1"
             >
               Services
-            </Link>
+            </a>
           </li>
           <li>
             <Link
