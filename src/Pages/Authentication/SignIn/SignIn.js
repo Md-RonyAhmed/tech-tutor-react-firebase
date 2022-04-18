@@ -1,14 +1,15 @@
 import React, { useRef } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import {ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignIn = () => {
-  const emailRef = useRef("");
-  const passwordRef = useRef("");
+  const emailRef = useRef('');
+  const passwordRef = useRef('');
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -28,7 +29,7 @@ const SignIn = () => {
   }
 
   if (error) {
-    errorElement = <p className="text-danger">Error: {error?.message}</p>;
+    errorElement = <p className="text-red-600">Error: {error?.message}</p>;
   }
 
   const handleSubmit = (event) => {
@@ -39,9 +40,9 @@ const SignIn = () => {
     signInWithEmailAndPassword(email, password);
   };
 
-  const navigateRegister = (event) => {
-    navigate("/signup");
-  };
+  // const navigateRegister = (event) => {
+  //   navigate("/signup");
+  // };
 
   const resetPassword = async () => {
     const email = emailRef.current.value;
@@ -67,6 +68,7 @@ const SignIn = () => {
                Email address
              </label>
              <input
+               ref={emailRef}
                type="email"
                className="form-control
         block
@@ -86,6 +88,7 @@ const SignIn = () => {
                id="exampleInputEmail2"
                aria-describedby="emailHelp"
                placeholder="Enter email"
+               required
              />
            </div>
            <div className="form-group mb-6">
@@ -96,6 +99,7 @@ const SignIn = () => {
                Password
              </label>
              <input
+               ref={passwordRef}
                type="password"
                className="form-control block
         w-full
@@ -113,6 +117,7 @@ const SignIn = () => {
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                id="exampleInputPassword2"
                placeholder="Password"
+               required
              />
            </div>
            <div className="flex justify-between items-center mb-6">
@@ -129,12 +134,13 @@ const SignIn = () => {
                  Remember me
                </label>
              </div>
-             <a
-               href="#!"
+             <button
+               onClick={resetPassword}
                className="text-blue-600 hover:text-blue-700 focus:text-blue-700 transition duration-200 ease-in-out"
              >
                Forgot password?
-             </a>
+             </button>
+             <ToastContainer/>
            </div>
            <button
              type="submit"
@@ -159,6 +165,7 @@ const SignIn = () => {
            >
              Log In
            </button>
+           {errorElement}
            <p className="text-gray-800 mt-6 text-center">
              Not a member?{" "}
              <Link
@@ -169,6 +176,7 @@ const SignIn = () => {
              </Link>
            </p>
          </form>
+
          <SocialLogin></SocialLogin>
        </div>
      </div>
