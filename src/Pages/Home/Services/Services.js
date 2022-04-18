@@ -17,7 +17,7 @@ const Services = () => {
                {" "}
                Choose Best Services
              </h1>
-             <div class="md:flex justify-center mx-auto block">
+             <div className="md:flex justify-center mx-auto block">
                {services.map((service) => (
                  <Service key={service.id} service={service}></Service>
                ))}
