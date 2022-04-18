@@ -10,6 +10,35 @@ const SignUp = () => {
          <form>
            <div className="form-group mb-6">
              <label
+               for="exampleName"
+               className="form-label inline-block mb-2 text-gray-700"
+             >
+               Your Name
+             </label>
+             <input
+               type="text"
+               className="form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+               id="exampleName"
+               aria-describedby="textHelp"
+               placeholder="Enter your full-name"
+             />
+           </div>
+           <div className="form-group mb-6">
+             <label
                for="exampleInputEmail2"
                className="form-label inline-block mb-2 text-gray-700"
              >
@@ -64,6 +93,33 @@ const SignUp = () => {
                placeholder="Password"
              />
            </div>
+           <div className="form-group mb-6">
+             <label
+               for="exampleInputPassword3"
+               className="form-label inline-block mb-2 text-gray-700"
+             >
+               Confirm Password
+             </label>
+             <input
+               type="password"
+               className="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+               id="exampleInputPassword3"
+               placeholder="Password"
+             />
+           </div>
            <div className="flex justify-between items-center mb-6">
              <div className="form-group form-check">
                <input
@@ -75,7 +131,7 @@ const SignUp = () => {
                  className="form-check-label inline-block text-gray-800"
                  for="exampleCheck2"
                >
-                 Remember me
+                 Accept terms?
                </label>
              </div>
              <a
@@ -114,7 +170,7 @@ const SignUp = () => {
                href="#!"
                className="text-blue-600 hover:text-blue-700 focus:text-blue-700 transition duration-200 ease-in-out"
              >
-              Please Log In
+               Please Log In
              </a>
            </p>
          </form>
